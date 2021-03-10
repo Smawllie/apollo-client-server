@@ -32,7 +32,7 @@ function IsLoggedIn() {
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache,
-  uri: "http://localhost:4000/graphql",
+  uri: "https://codecollab.me/graphql",
   headers: {
     authorization: localStorage.getItem("token") || "",
   },
