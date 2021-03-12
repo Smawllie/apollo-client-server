@@ -55,6 +55,7 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "./**"
           target: "test"
+      # test
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
