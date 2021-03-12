@@ -19,6 +19,8 @@ jobs:
       with:
         node-version: 14
     - working-directory: ./start/client
+      run: npm i
+    - working-directory: ./start/client
       run: npm run build --if-present
     - name: upload a build artifact
       uses: actions/upload-artifact@v2.2.2
